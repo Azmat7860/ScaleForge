@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Uploads / user-generated content
+uploads/
+**/uploads/
+public/uploads/
+**/public/uploads/
+storage/
+**/storage/
+
+# Build artifacts and caches
+/dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+.angular/
+**/.angular/
+.cache/
+**/.cache/
+.vite/
+**/.vite/
+
+# OS/editor files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.vscode/
+**/.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lockfiles (optional: keep if you want reproducible installs)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

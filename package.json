@@ -1,0 +1,17 @@
+{
+  "name": "scaleforge-workspace",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace @scaleforge/api",
+    "dev:api:lb": "node scripts/dev-api-lb.mjs",
+    "dev:web": "npm run start --workspace @scaleforge/web",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "npm run format --workspace @scaleforge/api",
+    "format:check": "npm run format:check --workspace @scaleforge/api"
+  }
+}
